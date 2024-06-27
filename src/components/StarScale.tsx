@@ -33,9 +33,9 @@ const StarScale: React.FC<StarScale> = ({
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'Enter' && hoveredStar !== null) {
-      handleStarClick(hoveredStar);
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>, starId: number) => {
+    if (e.target === e.currentTarget && e.key === 'Enter') {
+      handleStarClick(starId);
       e.currentTarget.blur()
     }
   };
@@ -54,12 +54,10 @@ const StarScale: React.FC<StarScale> = ({
             value >= starId
           }
           // TODO: make this cleaner with less repeated code
-          onFocus={display ? undefined : () => handleStarHover(starId)}
-          onBlur={display ? undefined : handleStarLeave }
           onMouseEnter={display ? undefined : () => handleStarHover(starId)}
           onMouseLeave={display ? undefined : handleStarLeave}
           onClick={display ? undefined : () => handleStarClick(starId)}
-          onKeyDown={display ? undefined : (e) => handleKeyDown(e as React.KeyboardEvent<HTMLDivElement>)}
+          onKeyDown={display ? undefined : (e) => handleKeyDown(e as React.KeyboardEvent<HTMLDivElement>, starId)}
         />
       ))}
     </div>

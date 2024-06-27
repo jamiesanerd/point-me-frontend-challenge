@@ -8,7 +8,7 @@ const Star: React.ElementType<StarProps> = ({ hovered, marked, starId, ...props 
   return (
     <span
       data-star-id={starId}
-      className={`text-3xl cursor-pointer ${hovered ? "text-blue-300" : "text-yellow-500"}`}
+      className={`text-3xl cursor-pointer ${marked ? "text-yellow-500" : "text-brand-purple"}`}
       role="button"
       {...props}
     >

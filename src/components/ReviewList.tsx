@@ -18,7 +18,7 @@ const ReviewList: React.FC = () => {
       ) : (
         hasMore && (
           <button
-            className="h-10 px-6 font-semibold rounded-md bg-gray-500 text-white self-center"
+            className="h-10 px-6 font-semibold rounded-md bg-brand-purple text-white self-center"
             onClick={loadMoreReviews}
           >
             Load More

@@ -41,7 +41,7 @@ const StarRating = () => {
         type="submit"
         role="button"
         value="Submit review"
-        className={`mt-10 h-10 px-6 font-semibold rounded-md bg-black text-white disabled:opacity-50 disabled:cursor-not-allowed`}
+        className={`mt-10 h-10 px-6 font-semibold rounded-md bg-brand-purple text-white disabled:opacity-50 disabled:cursor-not-allowed`}
       />
     </form>
   );

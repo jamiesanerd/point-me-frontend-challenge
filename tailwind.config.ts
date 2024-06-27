@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "brand-purple": "rgb(139, 111, 254)"
+      }
     },
   },
   plugins: [],
