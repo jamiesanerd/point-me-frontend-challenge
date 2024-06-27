@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center px-24 py-4 ${inter.className}`}
     >
       <h1>Review App</h1>
       <ReviewApp />
