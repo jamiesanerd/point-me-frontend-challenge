@@ -2,7 +2,7 @@
 
 We have set up a React template for a Concierge 5-Star Rating App tailored to point.me’s unique travel expertise. Your task is to enhance this app by implementing key functionality, ensuring that it captures the essence of [our specialized concierge offerings](https://www.point.me/concierge). As a bonus round, feel free to add your own design flair to the output.
 
-There are 2 parts to this challege.
+There are 2 parts to this challenge.
 
 ### Part 1: Display existing reviews
 

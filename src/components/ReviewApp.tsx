@@ -1,4 +1,6 @@
-import StarRating from "@/components/StarRating";
+import StarRating from '@/components/StarRating';
+import { ReviewsProvider } from '@/context/ReviewsContext';
+import ReviewList from './ReviewList';
 
 const ReviewApp = () => {
   // Tip: You can grab data with fetch or an HTTP client of your choice:
@@ -6,11 +8,12 @@ const ReviewApp = () => {
   //      await axios.get("http://localhost:3000/api/reviews")
 
   return (
-    <div>
+    <ReviewsProvider>
       <StarRating />
-    </div>
+      <ReviewList />
+    </ReviewsProvider>
   );
 };
 
-ReviewApp.displayName = "ReviewApp";
+ReviewApp.displayName = 'ReviewApp';
 export default ReviewApp;
